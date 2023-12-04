@@ -1,0 +1,32 @@
+body{
+    background-color: #fe2;
+  }
+  h1{
+    text-align: center;
+    color: Navy;
+  }
+  .back{
+  height:40px;
+  width:40px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  border-radius: 50%;
+}
+button.back{
+  background-image: url(https://SilentDragons.np842.repl.co/images/back-navy.png);
+  background-size: contain;
+}
+button.back:hover {
+  background-color: #d1d102;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+    }
+  form{
+    text-align:center;background-color: #fe2; width: 300px;border: 15px solid navy; padding: 50px 20px;margin: auto;
+  }
+  p {
+    text-align:center;background-color: #fe2; width: 300px;border: 15px solid Navy; padding: 100px 20px;margin: 20px;
+    
+  }

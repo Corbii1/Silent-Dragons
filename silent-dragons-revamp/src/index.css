@@ -1,0 +1,169 @@
+.join-main {
+    margin: auto;
+}
+
+.join-main #join {
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    background-color: #115;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 1px 4px #990;
+}
+
+.join-main #join:hover {
+    background-color: #017;
+}
+
+.join-main #join:active {
+    background-color: #019;
+    box-shadow: 1px 1px #550;
+    transform: translateY(3px);
+}
+
+.join-main #create{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    color: #115;
+    border-radius:  5px;
+}
+
+.join-main #create:hover{
+    color: #669;
+}
+
+#bulletin {
+    background-color: none;
+    width: 100%;
+    height: calc(100vh - 15px);
+    display: grid;
+    gap: 10px;
+    padding: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0;
+}
+
+#rooms {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+    border: 1px black solid;
+    overflow-x: hidden;
+    padding: .5rem;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+#rooms h1 {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+
+#room-list li {
+    border: 2px solid #115;
+    height: 11rem;
+    margin: .5rem;
+    list-style: none;
+    overflow: auto;
+    padding: .5rem;
+}
+
+#room-list {
+
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#room-list h2 {
+    padding: 0;
+    margin: 0
+}
+
+#room-list h4 {
+    padding: 0;
+    margin: .5rem;
+}
+
+#room-list p {
+    padding: 0;
+    margin: 0;
+}
+
+#room-list img {
+    padding: 0;
+    margin: 0;
+    float: right;
+    height: 11rem;
+    width: 11rem;
+    object-fit: cover;
+}
+
+
+#messages {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    border: 1px black solid;
+}
+
+#popular {
+    grid-column: 3 / 5;
+    grid-row: 2 / 5;
+    border: 1px black solid;
+}
+
+#news {
+    grid-column: 5;
+    grid-row: 1 / 5;
+    border: 1px black solid;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+#news h1 {
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+}
+
+#news p {
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0;
+}
+
+#news ul {
+    list-style: none;
+    padding-left: 1rem;
+    overflow: auto;
+    margin: 0;
+}
+
+#new ul::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#news h2 {
+    padding: 0;
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+
+}
+
+#news img {
+    object-fit: cover;
+    float: right;
+}

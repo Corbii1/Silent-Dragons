@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Silent Dragons</title>
+  <link href="src/index.css" rel="stylesheet" type="text/css" />
+  <link href="src/main.css" rel="stylesheet" type="text/css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    /* function to use settings button*/
+    function settings() {
+      window.location = "settings.html";
+    }
+
+    function join_room() {
+      window.location = "joinRoom.html";
+    }
+
+    function home() {
+      window.location = "index.html";
+    }
+    function create_room() {
+      window.location = "createRoom.html";
+    }
+
+    function chat() {
+      window.location = "chatRoom.html";
+    }
+  </script>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="about.html">About</a>
+    <form action="search.html">
+      <input type="text" placeholder="Search..">
+      <button id="searchbtn">
+        <ion-icon id="searchicon" name="search-circle-sharp" onclick="search()"></ion-icon>
+      </button>
+    </form>
+  </div>
+
+  <center>
+    <h1> Welcome to Silent Dragons</h1>
+    <img src="src//assets/Silent_Dragons_Logo.png" width="100" height="150">
+
+    <p style="color: red;"> This is a draft webpage for the Silent Dragons home page</p>
+    <div class="join-main">
+      <button id="join" onClick="join_room();">Join Rooms</button>
+      <button id="create" onclick="create_room();">Or Make Your Own!</button>
+    </div>
+    <button onclick="settings()" style="margin: 10px;">Settings<ion-icon name="settings-outline"></ion-icon></button>
+    <button onclick="chat()" style="margin: 10px;">Chat<ion-icon name="chatbox-ellipses-outline"></ion-icon></button>
+  </center>
+  </body>
+</html>

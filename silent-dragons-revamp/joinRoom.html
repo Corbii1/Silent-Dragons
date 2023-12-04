@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="src/main.css" rel="stylesheet" type="text/css" />
+    <link href="src/joinRoom.css" rel="stylesheet" type="text/css" />
+    <script>
+        /* function to use settings button*/
+        function settings() {
+            window.location = "settings.html";
+        }
+
+        function join_room() {
+            window.location = "joinRoom.html";
+        }
+
+        function home() {
+            window.location = "index.html";
+        }
+        function create_room() {
+            window.location = "createRoom.html";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="notification-box"></div>
+    <div class="topnav">
+        <a onclick="home()">Home</a>
+        <a href="about.html">About</a>
+        <form action="search.html">
+            <input type="text" placeholder="Search..">
+            <button id="searchbtn">
+                <ion-icon id="searchicon" name="search-circle-sharp" onclick="search()"></ion-icon>
+            </button>
+        </form>
+    </div>
+    <!-- <button class="back" onClick="window.location='index.html'">
+        <ion-icon name="chevron-back-circle" class="backicon"></ion-icon>
+    </button> -->
+    <center>
+        <h1> Current Rooms</h1>
+    </center>
+    <div class="room-container">
+        <h1 style="color:navy;">Available Rooms</h1>
+        <ul>
+            
+        </ul>
+    </div>
+</body>
+
+</html>
